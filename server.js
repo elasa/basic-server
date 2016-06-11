@@ -13,7 +13,7 @@ server.on('listening', testlistening)
 
 server.listen(port)
 
-// Funciotions for callback
+// Callback function
 function testlistening(){
   console.log('listening on port '+port);
 }
