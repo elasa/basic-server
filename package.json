@@ -1,0 +1,19 @@
+{
+  "name": "basic-server",
+  "version": "1.0.0",
+  "description": "Creating a basic server using io.js and ES6",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elasa/basic-server.git"
+  },
+  "author": "Erik Lassa <erik.lasa.t@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elasa/basic-server/issues"
+  },
+  "homepage": "https://github.com/elasa/basic-server#readme"
+}
