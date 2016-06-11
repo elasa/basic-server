@@ -19,5 +19,5 @@ function testlistening(){
 }
 
 function testRequest(req, res){
-  res.end('Hello io.js');
+  res.end('Hello io.js!');
 }
