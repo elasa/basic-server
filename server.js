@@ -1,6 +1,8 @@
 'use strict'
 
 const http = require('http')
+const fs = require('fs')
+const path = require('path')
 
 // you can use enviroment variable: PORT=8080 node server.js on command line
 const port = process.env.PORT || 3000
@@ -19,5 +21,14 @@ function testlistening(){
 }
 
 function testRequest(req, res){
-  res.end('Adding branch dev');
+  let filename = path.join(__dirname, 'public','index.html')
+  fs.readFile(filename, function(err, file){
+    if(err){
+      return res.end(err.message)
+    }
+    else{
+      res.setHeader('Content-Type', 'text/html')
+      res.end(file)
+    }
+  })
 }
