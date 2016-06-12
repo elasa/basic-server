@@ -15,9 +15,9 @@ server.listen(port)
 
 // Callback function
 function testlistening(){
-  console.log('listening on port '+port);
+  console.log('listening on port '+port)
 }
 
 function testRequest(req, res){
-  res.end('Adding tag 002');
+  res.end('Adding tag 002')
 }
